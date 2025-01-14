@@ -1,0 +1,11 @@
+set preview img2sixel
+set drawbox
+set icons
+set scrolloff 4
+set info size:time
+
+map a push %mkdir<space>
+
+map M &mimeopen $f
+
+

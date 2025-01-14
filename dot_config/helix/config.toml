@@ -1,0 +1,38 @@
+theme = "catppuccin_mocha"
+
+[editor]
+cursorline = true
+true-color = true
+color-modes = true
+search.smart-case = true
+bufferline = "multiple"
+
+[editor.indent-guides]
+render = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+# max-wrap = 25 # increase value to reduce forced mid-word wrapping
+# max-indent-retain = 0
+# wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+left = ["mode", "spinner", "position-percentage"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+
+
+[keys.normal]
+"A-," = "goto_previous_buffer"
+"A-." = "goto_next_buffer"
+"A-w" = ":buffer-close"
+"A-/" = "repeat_last_motion"

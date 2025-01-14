@@ -1,0 +1,14 @@
+set ruler
+set showmode
+set iclower
+set showmatch
+set verbose
+set searchincr
+set report=1
+set ignorecase
+set noshowmatch
+set tabstop=2
+set shiftwidth=4
+set nolist
+set autoindent
+set hardtab=2

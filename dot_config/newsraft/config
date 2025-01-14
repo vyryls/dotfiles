@@ -1,0 +1,21 @@
+set scrolloff 5
+set download-timeout 10
+set feeds-menu-paramount-explore true
+set global-section-name all
+set menu-section-entry-format %7.0u @ %t
+set menu-feed-entry-format %7.0u | %o
+set notification-command "fyi -a newsraft -i ~/.local/share/icons/rss-feed.svg -t 6000 '%q new feeds'"
+set pager-width 0
+# set pager-centering false
+
+bind i exec swayimg "%l"
+bind f exec fetch --output=$HOME/downloads "%l"
+bind m exec mpv "%l"
+bind Y exec yt-dlp "%l"
+bind t exec fetch --output=$HOME/watch/ "%l"
+bind d mark-read
+
+bind E exec $EDITOR ~/.config/newsraft/feeds
+bind C exec $EDITOR ~/.config/newsraft/config
+
+bind O exec w3m "%l"
